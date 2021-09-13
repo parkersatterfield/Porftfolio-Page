@@ -1,0 +1,176 @@
+/* Set basic universal css properties*/
+* {
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    transition: all 0.5s ease-in-out;
+}
+
+a {
+    color: teal;
+}
+
+nav {
+    background-color: rgb(49, 49, 49);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav h1 {
+    font-size: 46;
+    position:relative;
+    top: 25;
+    color: rgb(49, 49, 49);
+    background-color: teal;
+    margin: 2% 2% 2% 0;
+    padding: 1% 1% 1% 5%;
+    width: fit-content;
+}
+
+nav ul {
+    text-align: right;
+    flex: 3;
+    margin: 3rem 0 1rem 0;
+}
+
+nav ul li{
+    display: inline;
+    margin: 1%;
+    padding: 1%;
+    font-size: large;
+    font-weight: bolder;
+}
+
+.hero {
+    background-image: url(../images/endless-constellation.svg);
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.hero h2 {
+    font-size: 14pt;
+    color: rgb(49, 49, 49);
+    background-color: teal;
+    padding: 0.5% 0.5% 0.5% 0.5%;
+    margin: 3%;
+}
+
+#me {
+    height: 100px;
+    border-radius: 50px;
+    margin: 15px;
+}
+
+.container {
+    margin: 2%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container p {
+    flex: 2;
+    margin: 1%;
+}
+
+.flex {
+    display: flex;
+    flex: 2;
+    flex-wrap: wrap;
+}
+
+.container h1 {
+    border-right-style: solid;
+    border-right-color: teal;
+    width: 150px;
+    padding: 2%;
+    color: teal;
+    text-align: right;
+}
+
+.container figcaption {
+    padding: 10px;
+    color: white;
+    background-color: teal;
+    width:fit-content;
+    height: fit-content;
+    position: relative;
+    bottom: 75px;
+    left: 10px;
+}
+
+.work {
+    display: flex;
+    justify-content: space-evenly;
+    flex: 2;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.work img:hover {
+    opacity: 70%;
+    -webkit-filter: sepia(50%);
+    border-color: rgb(223, 174, 15);
+}
+
+.work img {
+    border-style: solid;
+    border-width: 5px;
+    border-color: teal;
+    flex: 2;
+    margin: 10px;
+}
+
+#example-main {
+    max-width: 60vw;
+}
+
+#example {
+    max-width: 30vw;
+}
+
+
+.contact {
+    display: flex;
+    font-size: 14pt;
+    flex: 2;
+    justify-content: space-around;
+    align-items: center;
+    color:rgb(49, 49, 49);
+    list-style-type: none;
+    text-decoration: underline teal;
+    padding: 10px;
+}
+
+.contact li:hover::before {
+    content: "\9889"
+}
+
+/* Media Queries for responsiveness*/
+@media screen and (max-width: 625px) {
+    nav h1{
+       width: 100%;
+       align-items: center;
+       text-align: center;
+    }
+    nav ul {
+        align-items: center;
+        text-align: center;
+    }
+    .container h1 {
+        font-size: 14pt;
+        margin-left: 5px;
+        padding-left: 5px;
+        width: 80px;
+    }
+    .contact {
+        display: block;
+        text-align: center;
+    }   
+}   
+
+@media screen and (max-width: 380px) {
+    nav ul li {
+        display: block;
+    }
+}
