@@ -8,6 +8,7 @@ a {
     color: teal;
 }
 
+/* Nav Section Styling*/
 nav {
     background-color: rgb(49, 49, 49);
     display: flex;
@@ -39,6 +40,7 @@ nav ul li{
     font-weight: bolder;
 }
 
+/* Hero Section Styling*/
 .hero {
     background-image: url(../images/endless-constellation.svg);
     height: 150px;
@@ -62,6 +64,7 @@ nav ul li{
     margin: 15px;
 }
 
+/* My Work Section Styling*/
 .container {
     margin: 2%;
     display: flex;
@@ -129,7 +132,7 @@ nav ul li{
     max-width: 30vw;
 }
 
-
+/* Contact Section Styling*/
 .contact {
     display: flex;
     font-size: 14pt;
