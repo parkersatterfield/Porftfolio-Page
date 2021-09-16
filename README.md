@@ -1,4 +1,4 @@
-# Porftfolio Page
+# Portfolio Page
 
 Parker Satterfield's personal portfolio landing page for Homework Assignment #2.
 ---
